@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST" action="{{ url_for('play') }}">
+        <div class="text-center">
+            <h2>Choose your option:</h2>
+            <button type="submit" name="choice" value="rock" class="btn btn-primary btn-lg">Rock</button>
+            <button type="submit" name="choice" value="paper" class="btn btn-success btn-lg">Paper</button>
+            <button type="submit" name="choice" value="scissors" class="btn btn-danger btn-lg">Scissors</button>
+        </div>
+    </form>
+{% endblock %}
